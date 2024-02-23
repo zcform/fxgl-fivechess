@@ -56,6 +56,7 @@ public class FcFactory implements EntityFactory {
                 .build();
     }
 
+    //棋盘点位
     @Spawns("cell")
     public Entity cell(SpawnData data) {
         Rectangle cent = new Rectangle(getAppWidth() - Constant.left * 2,
@@ -77,6 +78,7 @@ public class FcFactory implements EntityFactory {
         return et;
     }
 
+    //棋子实体
     @Spawns("piece")
     public Entity piece(SpawnData data) {
         Circle circle = new Circle(Constant.cell_w / 3, FXGL.<FcApplication>getAppCast().getColor());
@@ -89,6 +91,7 @@ public class FcFactory implements EntityFactory {
                 .build();
     }
 
+    //鼠标悬浮展示实体
     @Spawns("piece_h")
     public Entity piece_h(SpawnData data) {
         Circle circle = new Circle(Constant.cell_w / 3, FXGL.<FcApplication>getAppCast().getColor());

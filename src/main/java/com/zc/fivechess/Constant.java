@@ -52,10 +52,9 @@ public class Constant {
         AttackMap.put("111_10", 80000);
         AttackMap.put("1111_0", 80000);
 
-        // 双三、假四等复杂情况
-        AttackMap.put("1_1_1_1", 50000); // 双活三
-        AttackMap.put("1_11_1", 60000); // 假四（V型）
-        AttackMap.put("11_11", 70000); // 横向或纵向的两个活二
+        AttackMap.put("1_1_1_1", 50000);
+        AttackMap.put("1_11_1", 60000);
+        AttackMap.put("11_11", 70000);
 
         AttackMap.put("_111_", 50000);
 
@@ -116,13 +115,11 @@ public class Constant {
         DefendMap.put("_010_", 40000);
         DefendMap.put("_001_", 40000);
 
-        // 阻止对手多条潜在连线的同时创造己方发展空间
-        DefendMap.put("011_011", 15000); // 切断对手并形成活二
-        DefendMap.put("_01_01_", 10000); // 在对手棋子间插入白子
+        DefendMap.put("011_011", 15000);
+        DefendMap.put("_01_01_", 10000);
 
-        // 针对对手双三、活四等复杂布局的有效防御
-        DefendMap.put("0_11_1_0", 20000); // 切断双三发展
-        DefendMap.put("0_111_0", 25000); // 破坏假四布局
+        DefendMap.put("0_11_1_0", 20000);
+        DefendMap.put("0_111_0", 25000);
 
         DefendMap.put("01___", 3);
         DefendMap.put("_01__", 3);
